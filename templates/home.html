@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  {% load static %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="https://preview.colorlib.com/theme/edustage/img/xfavicon.png.pagespeed.ic.yTAlsDidk0.webp"
+    type="image/png">
+  <title>Ziyo Education</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+    integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+    integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+    integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="{% static 'css/A.css,,_bootstrap.css+css,,_flaticon.css+css,,_themify-icons.css+vendors,,_owl-carousel,,_owl.carousel.min.css+vendors,,_nice-select,,_css,,_nice-select.css,Mcc.B-c6Uo_zoN.css.pagespeed.cf.xr0L.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/A.style.css.pagespeed.cf.eMTSNgCb8X.css' %}">
+  <script type="text/javascript" async="" src="{% static 'js/analytics.js.Без названия' %}"
+    nonce="2a64367e-7dc1-4791-8b54-4a45d14ff8e8"></script>
+  <script defer="" referrerpolicy="origin" src="{% static 'js/s.js.Без названия' %}"></script>
+  <script
+    nonce="2a64367e-7dc1-4791-8b54-4a45d14ff8e8">(function (w, d) { !function (a, e, t, r) { a.zarazData = a.zarazData || {}; a.zarazData.executed = []; a.zaraz = { deferred: [], listeners: [] }; a.zaraz.q = []; a.zaraz._f = function (e) { return function () { var t = Array.prototype.slice.call(arguments); a.zaraz.q.push({ m: e, a: t }) } }; for (const e of ["track", "set", "debug"]) a.zaraz[e] = a.zaraz._f(e); a.zaraz.init = () => { var t = e.getElementsByTagName(r)[0], z = e.createElement(r), n = e.getElementsByTagName("title")[0]; n && (a.zarazData.t = e.getElementsByTagName("title")[0].text); a.zarazData.x = Math.random(); a.zarazData.w = a.screen.width; a.zarazData.h = a.screen.height; a.zarazData.j = a.innerHeight; a.zarazData.e = a.innerWidth; a.zarazData.l = a.location.href; a.zarazData.r = e.referrer; a.zarazData.k = a.screen.colorDepth; a.zarazData.n = e.characterSet; a.zarazData.o = (new Date).getTimezoneOffset(); a.zarazData.q = []; for (; a.zaraz.q.length;) { const e = a.zaraz.q.shift(); a.zarazData.q.push(e) } z.defer = !0; for (const e of [localStorage, sessionStorage]) Object.keys(e || {}).filter((a => a.startsWith("_zaraz_"))).forEach((t => { try { a.zarazData["z_" + t.slice(7)] = JSON.parse(e.getItem(t)) } catch { a.zarazData["z_" + t.slice(7)] = e.getItem(t) } })); z.referrerPolicy = "origin"; z.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(a.zarazData))); t.parentNode.insertBefore(z, t) };["complete", "interactive"].includes(e.readyState) ? zaraz.init() : a.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, 0, "script"); })(window, document);</script>
+  <script type="text/javascript" charset="UTF-8" src="{% static 'js/common.js.Без названия' %}"
+    nonce="2a64367e-7dc1-4791-8b54-4a45d14ff8e8"></script>
+  <script type="text/javascript" charset="UTF-8" src="{% static 'js/util.js.Без названия' %}"
+    nonce="2a64367e-7dc1-4791-8b54-4a45d14ff8e8"></script>
+</head>
+
+<body>
+
+  <header class="header_area">
+    <div class="main_menu">
+      <div class="search_input" id="search_input_box" style="display: none;">
+        <div class="container">
+          <form class="d-flex justify-content-between" method="post">
+            <input type="type" hidden value="search" name="chat_id">
+            <input type="text" class="form-control" id="search_input" placeholder="Search Here" name="text">
+            <button type="submit" class="btn"></button>
+            <i class="fa-solid fa-xmark"></i>
+          </form>
+        </div>
+      </div>
+      
+      
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand logo_h" href="#">
+            <img src="{% static 'photo/ziyodullo.png' %}" style="height: 50px;" alt="">Ziyo Education</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle"
+                  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Courses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Course
+                      Details</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Elements</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item submenu dropdown">
+                <a href="#" class="nav-link dropdown-toggle"
+                  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog
+                      Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <div class="nav-link search" id="search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="home_banner_area">
+    <div class="banner_inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="banner_content text-center">
+              <p class="text-uppercase">
+                Best online education service In the world
+              </p>
+              <h2 class="text-uppercase mt-4 mb-5">
+                One Step Ahead This Season
+              </h2>
+              <div>
+                <a href="#" class="primary-btn2 mb-3 mb-sm-0">learn more</a>
+                <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="feature_area section_gap_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Awesome Feature</h2>
+            <p>
+              Replenish man have thing gathering lights yielding shall you
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon">
+              <i class="fas fa-duotone fa-graduation-cap"></i>
+            </div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">Scholarship Facility</h4>
+              <p>
+                One make creepeth, man bearing theira firmament won't great
+                heaven
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><i class="fas fa-regular fa-book-open"></i></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">Sell Online Course</h4>
+              <p>
+                One make creepeth, man bearing theira firmament won't great
+                heaven
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single_feature">
+            <div class="icon"><i class="fas fa-regular fa-user-graduate"></i></div>
+            <div class="desc">
+              <h4 class="mt-3 mb-2">Global Certification</h4>
+              <p>
+                One make creepeth, man bearing theira firmament won't great
+                heaven
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="popular_courses">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">It yo'nalishlar</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel active_course owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <div class="single_course">
+                    <div class="course_head">
+                      <img class="img-fluid" src="{% static 'photo/rasm1.webp' %}" alt="">
+                    </div>
+                    <div class="course_content">
+                      <span class="price">$10</span>
+                      <span class="tag mb-4 d-inline-block">Frontend</span>
+                      <h4 class="mb-3">
+                        <a href="https://preview.colorlib.com/theme/edustage/course-details.html">Front End dasturlash
+                          nima ?</a>
+                      </h4>
+                      <p>
+                        <b>Front End</b> – bu turli xil web-saytlar, web-ilovalarning bizga ko’rinib turgan qismi
+                        hisoblanadi. Siz ko’rgan barcha saytlardagi turli xil animatsiyalar, tugmalar, matnlar, rasmlar
+                        va boshqa barcha bizga ko’rinib turgan qismi Front Endga kiradi.
+
+                        Front End dasturchi – bu o’sha saytni Front End qismini yaratuvchi dasturchi hisoblanadi.
+                      </p>
+                      <div
+                        class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                        <div class="authr_meta">
+                          <img src="{% static 'photo/xauthor1.png.pagespeed.ic.pOu_bXIKi1.webp' %}" alt="">
+                          <span class="d-inline-block ml-2">Cameron</span>
+                        </div>
+                        <div class="mt-lg-0 mt-3">
+                          <span class="meta_info mr-4">
+                            <a href="https://preview.colorlib.com/theme/edustage/#"> <i class="fa-solid fa-user"></i>10 </a>
+                          </span>
+                          <span class="meta_info"><a href="https://preview.colorlib.com/theme/edustage/#"> <i class="fa-solid fa-heart"></i>35 </a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="single_course">
+                    <div class="course_head">
+                      <img class="img-fluid" src="{% static 'photo/rasm2.webp' %}" alt="">
+                    </div>
+                    <div class="course_content">
+                      <span class="price">$25</span>
+                      <span class="tag mb-4 d-inline-block">Backend</span>
+                      <h4 class="mb-3">
+                        <a href="https://preview.colorlib.com/theme/edustage/course-details.html">Backend Developer kim
+                          ?</a>
+                      </h4>
+                      <p>
+                        <b>Back End Development</b> - orqa tomonni rivojlantirish, dasturning server tomoniga va
+                        ma'lumotlar bazasi
+                        va brauzer o'rtasida aloqador narsalarga tegishlidir. Back End Development/Orqa tomon ishlab
+                        chiqishi deganda,
+                        avvalo saytning ishlashiga e'tiborinni qaratadigan rivojlanishning server tomoni tushuniladi.
+                      </p>
+                      <div
+                        class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                        <div class="authr_meta">
+                          <img src="{% static 'photo/xauthor2.png.pagespeed.ic.QMaiKd7N75.webp' %}" alt="">
+                          <span class="d-inline-block ml-2">Cameron</span>
+                        </div>
+                        <div class="mt-lg-0 mt-3">
+                          <span class="meta_info mr-4">
+                            <a href="https://preview.colorlib.com/theme/edustage/#"> <i class="fa-solid fa-user"></i>25 </a>
+                          </span>
+                          <span class="meta_info"><a href="https://preview.colorlib.com/theme/edustage/#"> <i class="fa-solid fa-heart"></i>35 </a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="single_course">
+                    <div class="course_head">
+                      <img class="img-fluid" src="{% static 'photo/rasm3.webp' %}" alt="">
+                    </div>
+                    <div class="course_content">
+                      <span class="price">$25</span>
+                      <span class="tag mb-4 d-inline-block">Android</span>
+                      <h4 class="mb-3">
+                        <a href="https://preview.colorlib.com/theme/edustage/course-details.html">Android dasturlash</a>
+                      </h4>
+                      <p>
+                        <b>Android dasturlash </b>- Dasturlashni endigina boshlovchilar yoki shu sohaga qiziquvchilar
+                        qaysi yo'nalishni
+                        tanlash kerak va uning yaqin kelajagi qanday degan savol qiziqtiradi. Albatta,
+                        tanlangan yo'nalish jamiyatga foydasi tegadigan,
+                        kelajagi bor va eng muhimi yuqori daromadga olib keladigan bo'lishi kerak
+                      </p>
+                      <div
+                        class="course_meta d-flex justify-content-lg-between align-items-lg-center flex-lg-row flex-column mt-4">
+                        <div class="authr_meta">
+                          <img src="{% static 'photo/xauthor3.png.pagespeed.ic.JqBWNrvoU0.webp' %}" alt="">
+                          <span class="d-inline-block ml-2">Cameron</span>
+                        </div>
+                        <div class="mt-lg-0 mt-3">
+                          <span class="meta_info mr-4">
+                            <a href="https://preview.colorlib.com/theme/edustage/#"> <i class="fa-solid fa-user"></i>25 </a>
+                          </span>
+                          <span class="meta_info"><a href="https://preview.colorlib.com/theme/edustage/#"> <i class="fa-solid fa-heart"></i>35 </a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="owl-nav disabled">
+              <div class="owl-prev"><img src="{% static 'photo/prev.png' %}"></div>
+              <div class="owl-next"><img src="{% static 'photo/next.png' %}"></div>
+            </div>
+            <div class="owl-dots disabled"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section_gap registration_area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="row clock_sec clockdiv" id="clockdiv">
+            <div class="col-lg-12">
+              <h1 class="mb-3">Ro'yxatdan o'tish</h1>
+              <p>
+                Siz ham bizning kurslarimizda o'qimoqchi bo'lsangiz unda hoziroq ro'yxatdan o'ting ...
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+          <div class="register_form">
+            <h3>Kursga ro'yxatdan o'tish</h3>
+            <!-- <p>It is high time for learning</p> -->
+            <form class="form_area" id="myForm"
+              method="post" action="">{% csrf_token %} 
+              <div class="row">
+                <div class="col-lg-12 form_group">
+                  <input name="name" placeholder="Ismingiz" required="" type="text">
+                  <input name="tel" placeholder="Telefon raqamingiz" required="" type="tel">
+                  <input name="email" placeholder="Email adress"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required="" type="email">
+                  
+                </div>
+                <div class="col-lg-12 text-center">
+                  <button class="primary-btn">Ro'yxatdan o'tish</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="trainer_area section_gap_top">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">Mening ustozlarim</h2>
+            <p>
+              Bu yutuqlarga erishishim uchun yordamlarini ayamagan ustozlarim
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center d-flex align-items-center">
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="{% static 'photo/ustoz-python.jpg' %}" alt="">
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>Abdulhamid</h4>
+            <p class="designation">Backend developer</p>
+            <div class="mb-4">
+              <p>
+                Manga python va Backenddan o'z bilimlarini o'rgatganlar
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="{% static 'photo/abdurahmondi-akasi.jpg' %}" alt="">
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>Muhammad Amin Naziraliyev</h4>
+            <p class="designation">Codial - Zamonaviy Kasblar Akademiyasi asoschisi</p>
+            <div class="mb-4">
+              <p>
+                Ustozimizni maslahatlari bilan ancha bilimlarni egallaganman.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+          <div class="thumb d-flex justify-content-sm-center">
+            <img class="img-fluid" src="{% static 'photo/nurullo.jpg' %}" alt="">
+          </div>
+          <div class="meta-text text-sm-center">
+            <h4>Nurulloxon</h4>
+            <p class="designation">Android developer</p>
+            <div class="mb-4">
+              <p>
+                Manga komputer savodhonligidan o'z bilimini ayamasdan bergan.
+              </p>
+            </div>
+            <div class="align-items-center justify-content-center d-flex">
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://preview.colorlib.com/theme/edustage/#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="events_area">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3 text-white">Kurslar</h2>
+            <p>
+              Bizdagi hozirgi kurslar
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="single_event position-relative">
+            <div class="event_thumb">
+              <img src="{% static 'photo/xe1.jpg.pagespeed.ic.Xjf7ZFLDLk.webp' %}" alt="">
+            </div>
+            <div class="event_details">
+              <div class="d-flex mb-4">
+                <div class="date"><span>15</span> Oct</div>
+                <div class="time-location">
+                  <p>
+                    <i class="fa-solid fa-calendar-days"></i> 13:00 AM - 15:30 AM
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-chalkboard-user"></i> Ziyodullo Aliyev
+                  </p>
+                </div>
+              </div>
+              <p>
+                Komputer savodhonligi, Frontend va Backend kurslari
+              </p>
+              <a href="https://preview.colorlib.com/theme/edustage/#" class="primary-btn rounded-0 mt-3">Ko'proq
+                ko'rish</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="single_event position-relative">
+            <div class="event_thumb">
+              <img src="{% static 'photo/mnemonika_uz.jpg' %}" style="height: 400px; width: 500px;" alt="">
+            </div>
+            <div class="event_details">
+              <div class="d-flex mb-4">
+                <div class="date"><span>15</span> Oct</div>
+                <div class="time-location">
+                  <p>
+                    <i class="fa-solid fa-calendar-days"></i>12:00 AM - 12:30 AM
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-chalkboard-user"></i> Muhammadjonov Ulug'bek
+                  </p>
+                </div>
+              </div>
+              <p>
+                Mnemonika xotirani kuchytirish va mental arifmetika
+              </p>
+              <a href="https://preview.colorlib.com/theme/edustage/#" class="primary-btn rounded-0 mt-3">Ko'proq
+                ko'rish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="testimonial_area section_gap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="main_title">
+            <h2 class="mb-3">O'quvchilarni biz haqimizda fikrlari</h2>
+            <p>
+              Bu yerdagi malumotlar endi qoshiladi...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer-area section_gap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Bot Products</h4>
+          <ul>
+            <li><a href="https://t.me/top_kitobbot">Kitob qidiruvchi bot</a></li>
+            <li><a href="https://t.me/Taqvim_uzbot">Namoz-vaqtlari bot</a></li>
+            <li><a href="https://t.me/farq_topbot">Farq-top o'yin boti</a></li>
+            <li><a href="https://t.me/entouz_bot">Tarjimon bot</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Website Products</h4>
+          <ul>
+            <li><a href="https://namoz-vaqti.uz">Namoz-vaqtlari</a></li>
+            <li><a href="https://hamrohsavdo.pythonanywhere.com">Shop site</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="#">Freelance Plashodka</a></li>
+            <li><a href="#">Rtm</a></li>
+            <li><a href="#">Marvarid Lab</a></li>
+            <li><a href="https://uzinfocom.uz/uz/">Uzinfocom</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 single-footer-widget">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Experts</a></li>
+            <li><a href="#">Agencies</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 single-footer-widget">
+          <h4>Newsletter</h4>
+          <p>You can trust us. we only send promo offers,</p>
+          <div class="form-wrap" id="mc_embed_signup">
+            <form target="_blank"
+              action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+              class="form-inline" novalidate="true">
+              <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus=""
+                onblur="this.placeholder = &#39;Your Email Address&#39;" required="" type="email">
+              <button class="click-btn btn btn-default">
+                <span>subscribe</span>
+              </button>
+              <div style="position: absolute; left: -5000px;">
+                <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+              </div>
+              <div class="info"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row footer-bottom d-flex justify-content-between">
+        <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">
+
+          Copyright © 2022 Ziyodullo Aliyev
+
+
+        </p>
+        <div class="col-lg-4 col-sm-12 footer-social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/ziyodullodev"><i class="fa-brands fa-github"></i></a>
+          <a href="https://t.me/Foydali_Hacker"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://www.linkedin.com/in/ziyodullo"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="{% static 'js/jquery-3.2.1.min.js.Без названия' %}"></script>
+  <script
+    src="{% static 'js/js,_popper.js+js,_bootstrap.min.js+vendors,_nice-select,_js,_jquery.nice-select.min.js.pagespeed.jc.bpB8ipHmhM.js.Без названия' %}"></script>
+
+
+  <script src="{% static 'js/js' %}"></script>
+  <script src="{% static 'js/gmaps.min.js.Без названия' %}"></script>
+  <script src="{% static 'js/theme.js.Без названия' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  <script async="" src="{% static 'js/js(1)' %}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer="" src="{% static 'js/v652eace1692a40cfa3763df669d7439c1639079717194' %}"
+    integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+    data-cf-beacon="{&quot;rayId&quot;:&quot;758d6b4d3aebd95b&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2022.8.1&quot;,&quot;si&quot;:100}"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      items: 3,
+      margin: 5,
+      autoplay: true,
+      autoplayTimeout: 2100,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 3
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+</body>
+
+</html>
