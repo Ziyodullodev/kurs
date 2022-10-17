@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 import requests
-from django.http.response import JsonResponse
-from rest_framework.views import APIView
+# from django.http.response import JsonResponse
+# from rest_framework.views import APIView
 # Create your views here.
 
 def home(request):
@@ -27,13 +27,13 @@ def home(request):
 #     #     requests.get(f"https://api.telegram.org/bot5342966070:AAF7m176nTTcVD3a0JLwD5JoO2Mvf-JEqxg/sendmessage?chat_id=848796050&text={data}&parse_mode=html")
 #     # return render(request, 'home.html')
 
-class Botpost(APIView):
-    def post(self, request):
-        data = request.POST
-        # data = {
-        #     'salom':"qale"
-        # }
-        data = list(data)
-        ok = requests.get(f"https://api.telegram.org/bot1513183791:AAEmAhS3eCFG3ahUE49ghoeKSeCx9xLfw8c/sendmessage?chat_id=848796050&text=salom{data}&parse_mode=html")
-        # print(ok.json())
-        return JsonResponse({'ok':'salom'})
+# class Botpost(APIView):
+#     def post(self, request):
+#         data = request.POST
+#         # data = {
+#         #     'salom':"qale"
+#         # }
+#         data = list(data)
+#         ok = requests.get(f"https://api.telegram.org/bot1513183791:AAEmAhS3eCFG3ahUE49ghoeKSeCx9xLfw8c/sendmessage?chat_id=848796050&text=salom{data}&parse_mode=html")
+#         # print(ok.json())
+#         return JsonResponse({'ok':'salom'})
